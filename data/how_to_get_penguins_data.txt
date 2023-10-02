@@ -1,0 +1,8 @@
+https://github.com/mcnakhaee/palmerpenguins?search=1
+
+powershell:
+pip install palmerpenguins
+
+python code:
+from palmerpenguins import load_penguins
+penguins = load_penguins()
