@@ -1,4 +1,5 @@
 ### Main Applicaiton ###
+# press CTRL + C to stop app
 
 import pandas as pd
 from dash import Dash, dcc, html
