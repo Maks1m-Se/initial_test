@@ -5,6 +5,7 @@
 # The main.py app than imports and
 # takes the layout function:
 #
+#
 # from component import my_layout_function
 # ...
 # app.layout = my_layout_function(app)
