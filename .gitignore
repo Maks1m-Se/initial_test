@@ -1,1 +1,3 @@
-/env_inital_dash
+# Folders to ignore in versioning
+
+env_initial_dash/
