@@ -11,6 +11,7 @@
 # app.layout = my_layout_function(app)
 
 from dash import Dash, dcc, html
+from . import island_dropdown
 
 ### Final layout function ###
 def create_layout(app: Dash, data) -> html.Div:
@@ -113,6 +114,9 @@ def create_test_layout(app: Dash) -> html.Div:
         className="app-div",
         children=[
             html.H1(app.title),
-            html.Hr()
-        ]
+            html.Hr(),
+            html.Div(
+                className="dropdown-container", children=[island_dropdown.render(app)]
+            ),
+        ],
     )

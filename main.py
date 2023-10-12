@@ -18,7 +18,8 @@ app = Dash(__name__, external_stylesheets=[BOOTSTRAP])
 app.title = "Palmer Penguins"
 
 ### Layout application ###
-app.layout = create_layout(app, penguins) #add imported layout function here 
+#app.layout = create_layout(app, penguins) #add imported layout function here 
+app.layout = create_test_layout(app) #add imported layout function here 
 
 # check if skript is main script
 # and running the web application
