@@ -26,7 +26,11 @@ To set up and run the application, follow these steps:
 # main.py
 
 The Main file does the following things:
--loads all the nessecar libraries and
+- loads all the nessecar libraries and
+- reads the data
+- initializes the Dash class
+- creates the layout from the components\layout.py module
+- starts the server and hosts the Dash application
 
 ## Usage
 
