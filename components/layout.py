@@ -14,6 +14,15 @@ from dash import Dash, dcc, html
 
 ### Final layout function ###
 def create_layout(app: Dash, data) -> html.Div:
+    """
+    Create the layout for the Palmer Penguins web application.
+    Parameters:
+        app (Dash): Dash application instance.
+        data (DataFrame): Dataset to be displayed.
+
+    Returns:
+        html.Div: The layout of the web application.
+    """
     return html.Div(
         className="container",
     children=[       
@@ -87,11 +96,19 @@ def create_layout(app: Dash, data) -> html.Div:
                 "margin-right": "auto",
             },
         ),
+        # ... more components here
     ],
 )
 
 ### Test layout ###
 def create_test_layout(app: Dash) -> html.Div:
+    """
+    Create a simple test layout for the Dash application.
+    Parameters:
+        app (Dash): The Dash application instance.
+    Returns:
+        html.Div: The layout of the test page.
+    """
     return html.Div(
         className="app-div",
         children=[
