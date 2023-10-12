@@ -12,5 +12,10 @@ def render(app: Dash) -> html.Div:
                 value=all_islands,
                 multi=True, # option to select multiple options from dropdown
             ),
+            html.Button(
+                className="dropdown-button",
+                children=["Select All"],
+                id=ids.SELECT_ALL_ISLANDS_BUTTON
+            )
         ]
     )
