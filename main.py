@@ -20,5 +20,8 @@ app.title = "Palmer Penguins"
 ### Layout application ###
 app.layout = create_layout(app, penguins) #add imported layout function here 
 
+# check if skript is main script
+# and running the web application
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run_server(debug=True) 
+    # debug mode enabled; important for dev, should be disabled for production
