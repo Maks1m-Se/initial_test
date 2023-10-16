@@ -7,10 +7,9 @@ from dash_bootstrap_components.themes import BOOTSTRAP
 from palmerpenguins import load_penguins
 from components.layout import create_layout, create_test_layout
 
-# Read data
-penguins = load_penguins() #<class 'pandas.core.frame.DataFrame'>
-#print(data)
-
+# Path to data; can be than added to layout function
+#DATA_PATH = "./data/filename"
+#data = load_data(DATA_PATH)
 
 # Dash class instance
 app = Dash(__name__, external_stylesheets=[BOOTSTRAP])
