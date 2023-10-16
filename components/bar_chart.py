@@ -14,9 +14,11 @@ def render(app: Dash)-> html.Div:
         Output(ids.BAR_CHART, "children"),
         Input(ids.ISLAND_DROPDOWN, "value")
     )
+    # following function is called everytime the input changes. IDE doesnt know that.
+    # IDE greys out function, since there is no reference of it.
     def update_bar_chart(islands: list[str]) -> html.Div:
         # preparing data
-        peng_gb_year_island_cnt = penguins.groupby(['year', 'island']).count()
+        peng_gb_year_island_cnt = penguins.groupby(['year', 'island']).count() # type: ignore
         peng_gb_year_island_cnt = peng_gb_year_island_cnt.reset_index()
         peng_gb_year_island_cnt = peng_gb_year_island_cnt  \
                             .rename(columns={'species':'count'}) \

@@ -32,6 +32,13 @@ The Main file does the following things:
 - creates the layout from the components\layout.py module
 - starts the server and hosts the Dash application
 
+# components
+
+- each component has a render function
+- inside the render function the entire structure of Divs and other html elements, that are needed for that particular component are constructed
+- each render function receives the application and returns an html.Div object
+- each render function utilizes a callback function to enable connection to the graph
+
 ## Usage
 
 This section should describe how to use your Python Dash application, including any specific commands or options to run the dashboard.
