@@ -118,6 +118,6 @@ def create_test_layout(app: Dash) -> html.Div:
             html.Div(
                 className="dropdown-container", children=[island_dropdown.render(app)]
             ),
-            bar_chart.render
+            bar_chart.render(app)
         ],
     )
