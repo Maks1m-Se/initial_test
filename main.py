@@ -3,10 +3,9 @@
 
 import pandas as pd
 from dash import Dash, dcc, html
-from dash_bootstrap_components.themes import BOOTSTRAP
+from dash_bootstrap_components.themes import BOOTSTRAP 
 from palmerpenguins import load_penguins
 from components.layout import create_layout, create_test_layout
-
 
 # Read data
 penguins = load_penguins() #<class 'pandas.core.frame.DataFrame'>

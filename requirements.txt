@@ -1,0 +1,9 @@
+Babel
+components
+dash
+dash-bootstrap-components
+palmerpenguins
+pandas
+pandas-stubs
+plotly
+python-i18n
