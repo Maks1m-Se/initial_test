@@ -5,11 +5,10 @@ from . import ids
 from dash.dependencies import Input, Output
 from palmerpenguins import load_penguins
 
-
+# Load data
 penguins = load_penguins()
 
 def render(app: Dash)-> html.Div:
-
     @app.callback(
         Output(ids.BAR_CHART, "children"),
         Input(ids.ISLAND_DROPDOWN, "value")

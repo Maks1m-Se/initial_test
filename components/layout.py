@@ -13,8 +13,30 @@
 from dash import Dash, dcc, html
 from . import island_dropdown, bar_chart
 
+### Test layout ###
+def create_test_layout(app: Dash) -> html.Div:
+    """
+    Create a simple test layout for the Dash application.
+    Parameters:
+        app (Dash): The Dash application instance.
+    Returns:
+        html.Div: The layout of the test page.
+    """
+    return html.Div(
+        className="app-div",
+        children=[
+            html.H1(app.title),
+            html.Hr(),
+            html.Div(
+                className="dropdown-container", children=[island_dropdown.render(app)]
+            ),
+            bar_chart.render(app)
+        ],
+    )
+
+
 ### Final layout function ###
-def create_layout(app: Dash, data) -> html.Div:
+def create_final_layout(app: Dash, data) -> html.Div:
     """
     Create the layout for the Palmer Penguins web application.
     Parameters:
@@ -101,23 +123,3 @@ def create_layout(app: Dash, data) -> html.Div:
     ],
 )
 
-### Test layout ###
-def create_test_layout(app: Dash) -> html.Div:
-    """
-    Create a simple test layout for the Dash application.
-    Parameters:
-        app (Dash): The Dash application instance.
-    Returns:
-        html.Div: The layout of the test page.
-    """
-    return html.Div(
-        className="app-div",
-        children=[
-            html.H1(app.title),
-            html.Hr(),
-            html.Div(
-                className="dropdown-container", children=[island_dropdown.render(app)]
-            ),
-            bar_chart.render(app)
-        ],
-    )
