@@ -1,7 +1,7 @@
 Babel
 components
 dash
-dash-bootstrap-components
+dash-bootstrap-components==1.5.0
 palmerpenguins
 pandas
 pandas-stubs
